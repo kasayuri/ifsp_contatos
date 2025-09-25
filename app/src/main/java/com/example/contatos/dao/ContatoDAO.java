@@ -24,7 +24,7 @@ public class ContatoDAO {
         ContentValues values = new ContentValues();
         values.put(DbHelper.COLUMN_NAME, contato.getNome());
 
-        db.insert(DbHelper.COLUMN_NAME, null, values);
+        db.insert(DbHelper.TABLE_CONTATOS_NAME, null, values);
 
     }
 

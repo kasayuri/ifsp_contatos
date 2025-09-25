@@ -2,10 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="0dp"
@@ -18,18 +16,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tvNomeContatoLista"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/meus_contatos"
-            android:textAlignment="center"
-            android:textSize="34sp" />
-
-        <ListView
-            android:id="@+id/lvContatos"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            android:textSize="20sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
