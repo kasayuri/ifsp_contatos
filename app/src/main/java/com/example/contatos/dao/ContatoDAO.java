@@ -17,7 +17,6 @@ public class ContatoDAO {
     public ContatoDAO(Context context){
         DbHelper dbHelper = new DbHelper(context);
         db = dbHelper.getWritableDatabase();
-
     }
 
     public void inserirContato(Contato contato){
@@ -37,7 +36,7 @@ public class ContatoDAO {
                 null,
                 null,
                 null,
-                null);
+                DbHelper.COLUMN_NAME);
 
         if (cursor.moveToFirst()){
             do {
