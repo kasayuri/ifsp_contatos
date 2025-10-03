@@ -17,14 +17,13 @@ public class ContatoDAO {
     public ContatoDAO(Context context){
         DbHelper dbHelper = new DbHelper(context);
         db = dbHelper.getWritableDatabase();
-
     }
 
     public void inserirContato(Contato contato){
         ContentValues values = new ContentValues();
         values.put(DbHelper.COLUMN_NAME, contato.getNome());
 
-        db.insert(DbHelper.COLUMN_NAME, null, values);
+        db.insert(DbHelper.TABLE_CONTATOS_NAME, null, values);
 
     }
 
@@ -37,7 +36,7 @@ public class ContatoDAO {
                 null,
                 null,
                 null,
-                null);
+                DbHelper.COLUMN_NAME);
 
         if (cursor.moveToFirst()){
             do {

@@ -41,9 +41,9 @@ public class ContatoAdapter extends BaseAdapter {
         View viewCriada = activity.getLayoutInflater().inflate(R.layout.lista_contato, viewGroup, false);
         Contato contato = contatos.get(i);
 
-        TextView tvNomeContatoLista = view.findViewById(R.id.tvNomeContatoLista);
+        TextView tvNomeContatoLista = viewCriada.findViewById(R.id.tvNomeContatoLista);
         tvNomeContatoLista.setText(contato.getNome());
 
-        return view;
+        return viewCriada;
     }
 }
